@@ -1,0 +1,58 @@
+@import '../styles/vars';
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../assets/fonts/Exo2.0-Thin.otf") format("opentype");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration-style: unset;
+}
+
+html {
+  font-family: "Exo", sans-serif;
+
+  background-image: url("../assets/images/background.png");
+
+  @media (max-width: 576px) {
+    font-size: $font-size-extra-small;
+  }
+
+  @media (min-width: 576px) {
+    font-size: $font-size-small;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $font-size-medium;
+  }
+
+  @media (min-width: 992px) {
+    font-size: $font-size-large;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: $font-size-extra-large;
+  }
+
+  @media (min-width: 1900px) {
+    background-image: url("../assets/images/background@2x.png");
+  }
+}
+
+.container {
+  padding: 36px 80px;
+
+  @media (min-width: 1900px) {
+    padding: 72px 180px;
+  }
+}
+
+h1 {
+  font-size: 2.25rem;
+}
